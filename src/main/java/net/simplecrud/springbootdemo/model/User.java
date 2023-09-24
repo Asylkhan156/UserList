@@ -18,6 +18,9 @@ public class User {
         this.id = id;
         this.firstName = firstName;
     }
+    public User(){
+
+    }
 
 
 }

@@ -45,7 +45,7 @@ public class UserController {
     }
     @GetMapping("/user-update/{id}")
     public String updateUserForm(@PathVariable("id") Long id, Model model){
-        Optional<User> user = userService.findById(id);
+       Optional<User> user = userService.findById(id);
         model.addAttribute("user", user);
         return "user-update";
     }
